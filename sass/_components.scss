@@ -1,0 +1,246 @@
+// Components
+* {
+  box-sizing: border-box;
+}
+
+body, p, a {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: $color-primary;
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $color-white;
+}
+
+// button
+.btn{
+  background-color: inherit;
+  cursor: pointer;
+  width: 198px;
+  height: 48px;
+  border-radius: 50px;
+  font-size: $default-font-size;
+  line-height: 19px;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+  border: none;
+  color: $color-primary;
+}
+
+.title {
+  font-size: 44px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -0.0363636em;
+}
+
+.content {
+  font-size: $default-font-size;
+  line-height: $default-line-height;
+}
+
+// Card
+.card {
+  width: 360px;
+  height: 396px;
+  text-align: center;
+  padding-top: 40px;
+  background: $color-primary;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  position: relative;
+  opacity: 0.9;
+  &::after {
+    @include after-card();
+    background: linear-gradient(226.22deg, rgba(0, 0, 0, 0.0001) 4.85%,
+     rgba(0, 0, 0, 0.401127) 96.5%);
+    background-blend-mode: multiply ;
+  }
+  &--silver {
+    &::after {
+      @include after-card();
+      background: linear-gradient(226.82deg, rgba(255, 255, 255, 0.3) 5.13%,
+       rgba(255, 255, 255, 7e-05) 90.88%);
+      background-blend-mode: soft-light ;
+    }
+  }
+  &--gold {
+    background: $color-secondary;
+    &::after {
+      @include after-card();
+      background: linear-gradient(227.73deg, rgba(255, 255, 255, 0.496575) 0%,
+       rgba(255, 255, 255, 0.0001) 100%);
+      background-blend-mode: soft-light ;
+    }
+  }
+  &--sign-up {
+    opacity: 1;
+    &::after {
+      @include after-card();
+      background: linear-gradient(225.94deg, rgba(255, 255, 255, 0.7) 5.13%,
+       rgba(255, 255, 255, 7e-05) 90.88%);
+      background-blend-mode: soft-light;
+    }
+  }
+  &__name {
+    font-size: $large-font-size;
+    line-height: 27px;
+    text-transform: uppercase;
+    letter-spacing: 0.0555556em;
+    color: $color-secondary;
+    font-family: "Lucida Grande";
+    &--gold {
+      color: $color-primary;
+    }
+  }
+  &__price {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 15px;
+  }
+  &__dollar {
+    color: $color-white;
+    &--gold {
+      color: $color-primary;
+    }
+  }
+  &__number {
+    font-size: 64px;
+    line-height: 48px;
+    letter-spacing: -0.0363636em;
+    color: $color-white;
+    &--gold {
+      color: $color-primary;
+    }
+  }
+  &__date {
+    padding-bottom: 20px;
+    font-size: $large-font-size;
+    line-height: $large-line-height;
+    text-transform: uppercase;
+    color: $color-white;
+    &--gold {
+      color: $color-primary;
+    }
+  }
+  &__content {
+    color: $color-white;
+    max-width: 230px;
+    margin: auto;
+    &--gold {
+      color: $color-primary;
+    }
+    &--large {
+      color: $color-white;
+      text-transform: uppercase;
+    }
+  }
+  &__button {
+    margin-top: 30px;
+    background-color: $color-secondary;
+    position: absolute;
+    bottom: 0px;
+    @include align-center();
+    &:hover {
+      transform: translate(-50%,-55%);
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    }
+    &:active{
+      transform: translate(-50%,-47%);
+    }
+    &--gold {
+      color: $color-white;
+      background-color: $color-primary;
+    }
+  }
+  &__image {
+    padding: 30px 0;
+  }
+  &__input {
+    width: 256px;
+    height: 36px;
+    display: block;
+    margin: 0 auto 25px;
+    background: $color-white;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    border: 1px solid $color-grey;
+    border-radius: 4px;
+    padding-left: 15px;
+    margin-top: 25px;
+  }
+  &__link {
+    text-decoration: underline;
+    color: $color-secondary;
+  }
+}
+
+// Form
+.form{
+  width: max-content;
+  border: 2.13333px solid $color-form;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+  padding: 40px 60px;
+  text-align: center;
+  margin: 0 40px;
+  &__label {
+    display: block;
+    letter-spacing: 0.01em;
+    font-size: $large-font-size;
+    line-height: $large-line-height;
+    padding-bottom: 20px;
+    text-align: left;
+  }
+  &__name-email {
+    display: flex;
+    max-width: 420px;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__input {
+    border-radius: 4px;
+    background: $color-white;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    border: 1px solid $color-grey;
+    width: 204px;
+    height: 36px;
+    padding: 0 15px;
+  }
+  &__message {
+    max-width: max-content;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  &__area {
+    width: 420px;
+    height: 120px;
+    padding: 15px;
+  }
+  &__button {
+    background-color: $color-secondary;
+    justify-content: center;
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    }
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+}
+
+.icon {
+  cursor: pointer;
+}
