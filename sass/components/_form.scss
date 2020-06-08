@@ -1,0 +1,50 @@
+// Form
+.form{
+  width: max-content;
+  border: 2.13333px solid $color-form;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+  padding: 40px 60px;
+  text-align: center;
+  margin: 0 40px;
+  &__label {
+    display: block;
+    letter-spacing: 0.01em;
+    @include font($large-font-size, $large-line-height);
+    padding-bottom: 20px;
+    text-align: left;
+  }
+  &__name-email {
+    @include flex-box(flex, null, space-between);
+    max-width: 420px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  &__input {
+    border-radius: 4px;
+    background: $color-white;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    border: 1px solid $color-grey;
+    @include size(204px, 36px);
+    padding: 0 15px;
+  }
+  &__message {
+    max-width: max-content;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  &__area {
+    @include size(420px, 120px);
+    padding: 15px;
+  }
+  &__button {
+    background-color: $color-secondary;
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    }
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+}

@@ -1,0 +1,71 @@
+// Banner
+.banner{
+  padding: 490px 0;
+  position: relative;
+  background: {
+    image: url("../img/Background.png");
+    size: cover;
+    repeat: no-repeat;
+  }
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: $color-secondary;
+    mix-blend-mode: color;
+    z-index: -1;
+  }
+  &__container {
+    position: absolute;
+    top: 50%;
+    @include align-center();
+    &-icon {
+      @include size(80px, 80px);
+      background-color: $color-primary;
+      cursor: pointer;
+      position: relative;
+      border-radius: 50%;
+    }
+  }
+  &__content {
+    text-align: center;
+    margin-top: 20px;
+  }
+  &__form {
+    text-align: center;
+    margin-top: 50px;
+  }
+  &__email {
+    @include size(270px, 48px);
+    border: 1px solid $color-primary;
+    border-radius: 4px;
+    padding-left: 20px;
+    background-color: inherit;
+    margin-right: 15px;
+  }
+  &__btn {
+    border: 2px solid $color-primary;
+    &:hover {
+      transform: translateY(-2px);
+    }
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+  &__footer {
+    @include flex-box(flex, null, space-around);
+    width: 480px;
+    margin: auto;
+    margin-top: 100px;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    @include align-center();
+  }
+}
+

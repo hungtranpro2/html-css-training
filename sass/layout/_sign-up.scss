@@ -1,0 +1,15 @@
+
+// Sign up
+.sign-up {
+  padding: 70px 0 50px;
+  background: {
+    image: linear-gradient(0deg, rgba(75, 75, 75, 0.3),
+     rgba(75, 75, 75, 0.3)), url(../img/background_sign-up.png);
+    repeat: no-repeat;
+    size: cover;
+  }
+  &__title {
+    color: $color-white;
+    padding-bottom: 30px;
+  }
+}

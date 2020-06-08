@@ -1,0 +1,31 @@
+// Our team
+.team{
+  padding: 50px 0 100px;
+  &__title {
+    padding-bottom: 50px;
+  }
+  &__container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px 50px;
+  }
+  &__item {
+    @include flex-box(flex, null, null);
+  }
+  &__image {
+    align-self: flex-start;
+  }
+  &__content {
+    padding-left: 20px;
+  }
+  &__name {
+    @include font($large-font-size, 26px);
+  }
+  &__division {
+    @include font($default-font-size, 26px);
+  }
+  &__description {
+    max-width: 264px;
+    padding-top: 20px;
+  }
+}
+

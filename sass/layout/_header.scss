@@ -1,0 +1,46 @@
+// Header
+.header {
+  padding: 50px 0;
+  background: $color-primary;
+  @include flex-box(flex, null, space-between);
+  &__logo {
+    text-transform: uppercase;
+    color: $color-secondary;
+    @include font(36px, 42px);
+    letter-spacing: 0.0554719em;
+    cursor: pointer;
+    align-self: center;
+    margin-left: 10%;;
+  }
+  .nav {
+    @include flex-box(flex, center, null);
+    margin-right: 10%;
+    &__container {
+      @include flex-box(flex, null, space-between);
+      width: 318px;
+      margin-right: 50px;
+    }
+    &__link {
+      @include font($large-font-size, 21px);
+      letter-spacing: 0.0555556em;
+      text-transform: uppercase;
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+    &__btn {
+      @include size(180px, 48px);
+      color: $color-white;
+      border: 2px solid $color-white;
+      letter-spacing: 0.05em;
+      &:hover {
+        color: $color-secondary;
+        border-color: $color-secondary;
+      }
+      &:active {
+        transform: translateY(2px);
+      }
+    }
+  }
+}
+

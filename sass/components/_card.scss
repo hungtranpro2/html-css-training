@@ -1,58 +1,7 @@
-// Components
-* {
-  box-sizing: border-box;
-}
-
-body, p, a {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  color: $color-primary;
-  font-style: normal;
-  font-weight: normal;
-}
-
-ul{
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: $color-white;
-}
-
-// button
-.btn{
-  background-color: inherit;
-  cursor: pointer;
-  width: 198px;
-  height: 48px;
-  border-radius: 50px;
-  font-size: $default-font-size;
-  line-height: 19px;
-  text-transform: uppercase;
-  letter-spacing: 0.0625em;
-  border: none;
-  color: $color-primary;
-}
-
-.title {
-  font-size: 44px;
-  line-height: 48px;
-  text-align: center;
-  letter-spacing: -0.0363636em;
-}
-
-.content {
-  font-size: $default-font-size;
-  line-height: $default-line-height;
-}
 
 // Card
 .card {
-  width: 360px;
-  height: 396px;
+  @include size(360px, 396px);
   text-align: center;
   padding-top: 40px;
   background: $color-primary;
@@ -82,6 +31,7 @@ a {
        rgba(255, 255, 255, 0.0001) 100%);
       background-blend-mode: soft-light ;
     }
+    color: $color-primary;
   }
   &--sign-up {
     opacity: 1;
@@ -93,8 +43,7 @@ a {
     }
   }
   &__name {
-    font-size: $large-font-size;
-    line-height: 27px;
+    @include font($large-font-size, 27px);
     text-transform: uppercase;
     letter-spacing: 0.0555556em;
     color: $color-secondary;
@@ -104,8 +53,7 @@ a {
     }
   }
   &__price {
-    display: flex;
-    justify-content: center;
+    @include flex-box(flex, null, center);
     padding: 30px 0 15px;
   }
   &__dollar {
@@ -115,8 +63,7 @@ a {
     }
   }
   &__number {
-    font-size: 64px;
-    line-height: 48px;
+    @include font(64px, 48px);
     letter-spacing: -0.0363636em;
     color: $color-white;
     &--gold {
@@ -125,8 +72,7 @@ a {
   }
   &__date {
     padding-bottom: 20px;
-    font-size: $large-font-size;
-    line-height: $large-line-height;
+    @include font($large-font-size, $large-line-height);
     text-transform: uppercase;
     color: $color-white;
     &--gold {
@@ -167,8 +113,7 @@ a {
     padding: 30px 0;
   }
   &__input {
-    width: 256px;
-    height: 36px;
+    @include size(256px, 36px);
     display: block;
     margin: 0 auto 25px;
     background: $color-white;
@@ -183,64 +128,4 @@ a {
     text-decoration: underline;
     color: $color-secondary;
   }
-}
-
-// Form
-.form{
-  width: max-content;
-  border: 2.13333px solid $color-form;
-  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
-  padding: 40px 60px;
-  text-align: center;
-  margin: 0 40px;
-  &__label {
-    display: block;
-    letter-spacing: 0.01em;
-    font-size: $large-font-size;
-    line-height: $large-line-height;
-    padding-bottom: 20px;
-    text-align: left;
-  }
-  &__name-email {
-    display: flex;
-    max-width: 420px;
-    margin: auto;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  &__input {
-    border-radius: 4px;
-    background: $color-white;
-    mix-blend-mode: normal;
-    opacity: 0.8;
-    border: 1px solid $color-grey;
-    width: 204px;
-    height: 36px;
-    padding: 0 15px;
-  }
-  &__message {
-    max-width: max-content;
-    margin: auto;
-    margin-bottom: 25px;
-  }
-  &__area {
-    width: 420px;
-    height: 120px;
-    padding: 15px;
-  }
-  &__button {
-    background-color: $color-secondary;
-    justify-content: center;
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
-    }
-    &:active {
-      transform: translateY(2px);
-    }
-  }
-}
-
-.icon {
-  cursor: pointer;
 }

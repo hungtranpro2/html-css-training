@@ -1,0 +1,30 @@
+//mixin
+@mixin after-card {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+@mixin align-center {
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin  font($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin flex-box($flex: flex, $align: null, $justify: null) {
+  display: $flex;
+  align-items: $align;
+  justify-content: $justify;
+}

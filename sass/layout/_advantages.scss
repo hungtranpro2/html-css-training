@@ -1,0 +1,19 @@
+//advantages
+.advantage {
+  background: $color-primary;
+  padding: 50px 0 100px;
+  &__title {
+    padding-bottom: 20px;
+    color: $color-white;
+  }
+  &__content {
+    color: $color-white;
+    max-width: 430px;
+    margin: auto;
+    padding-bottom: 30px;
+  }
+  &__container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+}

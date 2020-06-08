@@ -1,0 +1,14 @@
+// button
+.btn{
+  background-color: inherit;
+  cursor: pointer;
+  @include size(198px,48px);
+  border-radius: 50px;
+  @include font($default-font-size, 19px);
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+  border: none;
+  color: $color-primary;
+}
+
+
