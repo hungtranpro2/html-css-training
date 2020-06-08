@@ -32,7 +32,6 @@
 - Open html-css-training folder: `cd html-css-training`
 - Checkout to feature/practice-two branch: `git checkout practice-2`
 - Install dependencies: `npm install`
-- Install parcel: `npm install -g parcel-bundler`
 - Start parcel bundler: `npm start`
 - Open url `http://localhost:1234` in your browser
 ## Authors
