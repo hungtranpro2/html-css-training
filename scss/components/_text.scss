@@ -1,0 +1,52 @@
+.text{
+  @include font(11px, 16px);
+  &--large{
+    @include font(12px, 16px);
+  }
+  @include respond(tablet){
+    @include font(11px, 16px);
+    &-large{
+      @include font(12px, 16px);
+    }
+  }
+
+  @include respond(desktop){
+    @include font(16px, 24px);
+    &-large{
+      @include font(16px, 32px);
+    }
+  }
+}
+
+.title{
+  @include font(20px, 24px);
+  letter-spacing: -0.025em;
+  text-align: center;
+  @include respond(tablet){
+    @include font(32px, 40px);
+  }
+  @include respond(desktop){
+    @include font(44px, 48px);
+  }
+}
+
+.nav{
+  &__container{
+    @include flex-box(flex, null, space-between);
+    width: 350px;
+  }
+  &__link{
+    text-transform: uppercase;
+    @include font(12px, 16px);
+    letter-spacing: 0.0832079em;
+  }
+  @include respond(desktop){
+    &__container{
+      width: 510px;
+    }
+    &__link{
+      @include font(18px, 21px);
+      letter-spacing: 0.0555556em;
+    }
+  }
+}
