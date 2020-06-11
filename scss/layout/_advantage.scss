@@ -1,0 +1,114 @@
+.advantage{
+  // devise phone
+  padding: 30px 0 40px;
+  &__title{
+    padding-bottom: 10px;
+  }
+  &__heading{
+    padding-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__item{
+    display: flex;
+    width: max-content;
+    margin: 0 auto 40px;
+  }
+  &__wrap-icon{
+    @include size(39px, 33px);
+  }
+  &__icon{
+    @include size(100%, 100%);
+  }
+  &__wrap-content{
+    padding-left: 15px;
+  }
+  &__name{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    letter-spacing: 0.0666667em;
+  }
+  &__content{
+    width: 200px;
+  }
+
+  &__wrap-image{
+    @include size(290px, 170px);
+  }
+  &__mac{
+    @include size(100%, 100%);
+  }
+
+  // Devise tablet
+  @include respond(tablet){
+    padding: 40px 0 40px;
+    &__title{
+      padding-bottom: 20px;
+    }
+    &__heading{
+      padding-bottom: 50px;
+    }
+    &__container{
+      overflow: hidden;
+    }
+    .container{
+      width: max-content;
+      margin: auto;
+      width: 720px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+    }
+    &__container-item{
+      padding: 25px 0;
+    }
+    &__item{
+      margin: 0 auto 70px;
+    }
+    &__content{
+      width: 210px;
+    }
+
+    &__wrap-image{
+      @include size(800px, 463px);
+    }
+  }
+
+    // Devise Desktop
+    @include respond(desktop){
+      padding: 80px 0 60px;
+      &__title{
+        padding-bottom: 30px;
+      }
+      &__heading{
+        padding-bottom: 55px;
+      }
+      &__container{
+        overflow: hidden;
+      }
+      .container{
+        width: max-content;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto 1fr;
+      }
+      &__container-item{
+        padding: 25px 0;
+      }
+      &__item{
+        margin: 0 auto 30px;
+      }
+      &__wrap-icon{
+        @include size(53px, 44px);
+      }
+      &__wrap-content{
+        padding:0 70px 0 20px ;
+      }
+      &__content{
+        width: 262px;
+      }
+
+      &__wrap-image{
+        @include size(802px, 464px);
+      }
+    }
+}

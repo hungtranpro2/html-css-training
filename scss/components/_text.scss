@@ -5,14 +5,14 @@
   }
   @include respond(tablet){
     @include font(11px, 16px);
-    &-large{
+    &--large{
       @include font(12px, 16px);
     }
   }
 
   @include respond(desktop){
     @include font(16px, 24px);
-    &-large{
+    &--large{
       @include font(16px, 32px);
     }
   }

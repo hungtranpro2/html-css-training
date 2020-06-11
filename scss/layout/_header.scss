@@ -1,4 +1,5 @@
 .header{
+  // Devise phone
   background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),
   url("../img/Bitmap-small.png");
   background-size: cover;
@@ -30,8 +31,7 @@
   }
 
   &-logo{
-    width: 100%;
-    height: 100%;
+    @include size(100%, 100%);
   }
 
   &__wrap-icon{
@@ -52,7 +52,7 @@
 
   &__title{
     color: $color-white;
-    padding: 80px 20% 35px;
+    padding: 80px 14% 35px;
   }
 
   &__wrap-play{
@@ -71,6 +71,7 @@
     padding: 110px 0 40px;
   }
 
+  // Devise tablet
   @include respond(tablet){
     background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),
   url("../img/Bitmap-tablet.png");
@@ -103,6 +104,7 @@
     }
   }
 
+  // Devise desktop
   @include respond(desktop){
     background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),
   url("../img/Background-desktop.png");
