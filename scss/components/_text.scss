@@ -22,7 +22,7 @@
 }
 
 .title{
-  @include font(20px, 24px);
+  @include font(20px, 40px);
   letter-spacing: -0.025em;
   text-align: center;
   @include respond(tablet){

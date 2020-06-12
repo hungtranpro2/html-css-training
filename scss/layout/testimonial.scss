@@ -1,0 +1,83 @@
+.testimonial{
+  // Devise phone
+  padding: 30px 0 15px;
+  &__title{
+    padding-bottom: 10px;
+  }
+  &__item{
+    display: flex;
+    margin-bottom: 15px;
+  }
+  &__wrap-image{
+    @include size(48px, 48px);
+    margin: 16px 0 0 9px;
+  }
+  &__image{
+    @include size(100%, 100%);
+  }
+  &__wrap-content{
+    padding:6px 0 8px 20px;
+  }
+  &__name{
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+  &__division{
+    line-height: 32px;
+    padding-bottom: 16px;
+  }
+  &__description{
+    max-width: 200px;
+    padding-bottom: 18px;
+  }
+  &__icon{
+    margin-right: 10px;
+  }
+
+  &__item:hover{
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+
+  // Devise tablet
+  @include respond(tablet){
+    padding: 40px 0 15px;
+    &__title{
+      padding-bottom: 30px;
+    }
+    &__container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0 20px;
+    }
+    &__wrap-image{
+      @include size(64px, 64px);
+      margin: 24px 0 0 19px;
+    }
+    &__wrap-content{
+      padding:20px 20px 24px 27px;
+    }
+  }
+
+  // Devise desktop
+  @include respond(desktop){
+    padding: 70px 0 50px;
+    &__title{
+      padding-bottom: 30px;
+    }
+    &__wrap-image{
+      @include size(96px, 96px);
+      margin: 47px 0 0 41px;
+    }
+    &__wrap-content{
+      padding:36px 38px 48px 30px;
+    }
+    &__division{
+      padding-bottom: 44px;
+    }
+    &__description{
+      max-width: 350px;
+      padding-bottom: 24px;
+    }
+  }
+}

@@ -52,6 +52,7 @@
 
   &__title{
     color: $color-white;
+    line-height: 24px;
     padding: 80px 14% 35px;
   }
 
@@ -131,6 +132,7 @@
     }
     &__title{
       padding: 40px 30% 50px;
+      line-height: 48px;
     }
     &__wrap-play{
       @include size(72px, 72px);
