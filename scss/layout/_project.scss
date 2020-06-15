@@ -93,7 +93,7 @@
   }
   &__pagination{
     @include flex-box(flex,center,space-between);
-    margin:40px auto;
+    margin:40px auto 20px;
     width: 230px;
   }
   &__number{
@@ -222,7 +222,7 @@
       width: 180px;
     }
     &__pagination{
-      margin:65px auto;
+      margin:65px auto 0;
       width: 350px;
     }
     &__number{
