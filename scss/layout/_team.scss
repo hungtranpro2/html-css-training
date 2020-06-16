@@ -19,7 +19,7 @@
   &__dot-nav{
     @include flex-box(flex,center,space-between);
     width: 70px;
-    margin: auto;
+    margin: 0 auto 20px;
   }
   &__dot{
     @include size(7px, 7px);

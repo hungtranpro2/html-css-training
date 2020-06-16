@@ -1,0 +1,64 @@
+.form{
+  width: max-content;
+  text-align: center;
+  &__name-email{
+    @include flex-box(flex,center,space-between);
+    width: 250px;
+  }
+  &__name, &__email{
+    width: 115px;
+    margin-bottom: 13px;
+  }
+  &__message{
+    display: block;
+    width: 100%;
+    margin-bottom: 13px;
+  }
+  & input{
+    border: none;
+    border-bottom: solid 1px #7d7d7d;
+  }
+  &__button{
+    height: 25px;
+  }
+
+  // Devise tablet
+  @include respond(tablet){
+    &__name-email{
+      width: 283px;
+    }
+    &__name, &__email{
+      width: 132px;
+      margin-bottom: 18px;
+    }
+    &__message{
+      margin-bottom: 30px;
+    }
+    & input{
+      padding-bottom: 5px;
+    }
+    &__button{
+      height: 32px;
+    }
+  }
+
+  // Devise desktop
+  @include respond(desktop){
+    &__name-email{
+      width: 361px;
+    }
+    &__name, &__email{
+      width: 166px;
+      margin-bottom: 38px;
+    }
+    &__message{
+      margin-bottom: 58px;
+    }
+    & input{
+      @include font(18px, 27px)
+    }
+    &__button{
+      @include size(210px, 48px);
+    }
+  }
+}
