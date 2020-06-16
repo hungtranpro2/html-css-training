@@ -35,10 +35,11 @@
     padding: 100px 0 30px;
     background: url('../img/background-team-tablet.png');
     background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @include grid(grid, 1fr 1fr);
     &__container{
       grid-column: 2;
+      max-width: none;
+      margin-left: 100px;
     }
     &__wrap-content{
       @include flex-box(flex,flex-start,space-between);

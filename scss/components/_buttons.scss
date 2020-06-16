@@ -5,7 +5,7 @@
   background-color: $color-secondary;
   border-radius: 50px;
   letter-spacing: 0.0727273em;
-  @include font(11px,13px);
+  @include font($font-default-phone,13px);
   color: $color-primary;
   border: none;
   cursor: pointer;
@@ -22,7 +22,7 @@
   // Devise desktop
   @include respond(desktop){
     @include size(210px, 48px);
-    @include font(16px,19px);
+    @include font($font-default-desktop,19px);
     letter-spacing: 0.0625em;
   }
 }

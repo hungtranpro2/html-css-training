@@ -80,7 +80,7 @@
     width: 270px;
     &__name{
       padding: 40px 0 30px;
-      @include font(18px, 27px);
+      @include font($font-large-desktop, 27px);
     }
     &__price{
       padding-bottom: 15px;
@@ -92,7 +92,7 @@
       @include font(64px, 48px);
     }
     &__date{
-      @include font(18px, 27px);
+      @include font($font-large-desktop, 27px);
       padding-bottom: 23px;
     }
     &__button{

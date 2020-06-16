@@ -13,7 +13,7 @@
     <header class="header">
       <div class="header__container-navigation">
         <div class="header__container-logo">
-          <img src="img/logo-header-desktop.png" alt="Logo" class="header-logo">
+          <img src="img/logo-header-desktop.png" alt="Logo" class="header__logo">
         </div>
         <nav class="nav header__nav">
           <ul class="nav__container">
@@ -25,17 +25,17 @@
         </nav>
         <div class="header__container-icon">
           <div class="header__wrap-icon">
-            <img src="./img/twitter-white.png" alt="Twitter" class="header-icon">
+            <img src="./img/twitter-white.png" alt="Twitter" class="header__icon">
           </div>
           <div class="header__wrap-icon">
-            <img src="./img/facebook-white.png" alt="Facebook" class="header-icon">
+            <img src="./img/facebook-white.png" alt="Facebook" class="header__icon">
           </div>
           <div class="header__wrap-icon">
-            <img src="./img/instagram-white.png" alt="Instagram" class="header-icon">
+            <img src="./img/instagram-white.png" alt="Instagram" class="header__icon">
           </div>
         </div>
         <div class="header__container-hamburger">
-          <img src="./img/Hamburger.png" alt="Hamburger" class="header-hamburger">
+          <img src="./img/Hamburger.png" alt="Hamburger" class="header__hamburger">
         </div>
       </div>
       <h2 class="title header__title">
@@ -238,7 +238,7 @@
               <div class="project__content">
                 <div class="project__wrap-heading">
                   <p class="text--white project__heading">Mountains</p>
-                  <div class="project__wrap-view view-heading">
+                  <div class="project__view-heading view-heading">
                     <img src="./img/Views.png" alt="View" class="view">
                   </div>
                 </div>
@@ -270,7 +270,7 @@
               <div class="project__content">
                 <div class="project__wrap-heading">
                   <p class="text--white project__heading">Mountains</p>
-                  <div class="project__wrap-view view-heading">
+                  <div class="project__view-heading view-heading">
                     <img src="./img/Views.png" alt="View" class="view">
                   </div>
                 </div>
@@ -302,7 +302,7 @@
               <div class="project__content">
                 <div class="project__wrap-heading">
                   <p class="text--white project__heading">Blue Mountains</p>
-                  <div class="project__wrap-view view-heading">
+                  <div class="project__view-heading view-heading">
                     <img src="./img/Views.png" alt="View" class="view">
                   </div>
                 </div>
@@ -334,7 +334,7 @@
               <div class="project__content">
                 <div class="project__wrap-heading">
                   <p class="text--white project__heading">Mountains</p>
-                  <div class="project__wrap-view view-heading">
+                  <div class="project__view-heading view-heading">
                     <img src="./img/Views.png" alt="View" class="view">
                   </div>
                 </div>
@@ -366,7 +366,7 @@
               <div class="project__content">
                 <div class="project__wrap-heading">
                   <p class="text--white project__heading">Mountains</p>
-                  <div class="project__wrap-view view-heading">
+                  <div class="project__view-heading view-heading">
                     <img src="./img/Views.png" alt="View" class="view">
                   </div>
                 </div>
@@ -398,7 +398,7 @@
               <div class="project__content">
                 <div class="project__wrap-heading">
                   <p class="text--white project__heading">Blue Mountains</p>
-                  <div class="project__wrap-view view-heading">
+                  <div class="project__view-heading view-heading">
                     <img src="./img/Views.png" alt="View" class="view">
                   </div>
                 </div>
@@ -437,17 +437,20 @@
           <div class="project__wrap-prev">
             <img src="./img/prev.png" alt="Prev" class="prev">
           </div>
-          <div class="project_wrap-number">
+          <div class="project__wrap-number">
             <p class="project__number">1</p>
           </div>
-          <div class="project_wrap-number">
+          <div class="project__wrap-number">
             <p class="project__number">2</p>
           </div>
-          <div class="project_wrap-number">
+          <div class="project__wrap-number">
             <p class="project__number">3</p>
           </div>
-          <div class="project_wrap-number">
+          <div class="project__wrap-number">
             <p class="project__number project__number--active">4</p>
+          </div>
+          <div class="project__wrap-number project__wrap-number--five">
+            <p class="project__number project__number">5</p>
           </div>
           <div class="project__wrap-next">
             <img src="./img/next.png" alt="Next" class="next">
@@ -515,5 +518,73 @@
       </div>
     </section>
     <!-- Contact end -->
+
+    <!-- Footer start -->
+    <footer class="footer">
+        <div class="container footer__container">
+          <img src="./img/logo-footer.png" alt="Logo" class="footer__logo">
+          <aside class="footer__aside">
+            <p class="text--large text--white footer__description">
+              Hoffman UI Kit was made to help you quickly create beautiful layouts of responsive websites.
+            </p>
+            <p class="text text--white footer__copy-right--hide">
+              © 2016 Created by Goldenfox
+            </p>
+            <div class="footer__wrap-subscribe">
+              <p class="text--large text--white footer__heading">subscribe to our news</p>
+              <div class="footer__wrap-input">
+                <input type="text" placeholder="Your Email" class="footer__input">
+                <a href=""><img src="./img/subscribe-button.png" alt="Subscribe" class="footer__button"></a>
+              </div>
+            </div>
+          </aside>
+          <aside class="footer__aside">
+            <ul class="nav footer__nav">
+              <li class="nav__item">
+                <a href="" class="nav__link footer__link ">About Us</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link footer__link">Testimonials</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link footer__link">Documentation</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link footer__link">Explore</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link footer__link">Blog</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link footer__link">Help</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link footer__link">Contact</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link footer__link">News</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link footer__link">Privacy</a>
+              </li>
+            </ul>
+            <div class="footer__wrap-follow">
+              <p class="text--large text--white footer__heading">follow us</p>
+              <div class="footer__wrap-social">
+                <img src="./img/Pinterest-yellow.png" alt="Pinterest" class="footer__social">
+                <img src="./img/linkedin-yellow.png" alt="Linkedin" class="footer__social">
+                <img src="./img/google-plus-yellow.png" alt="Google plus" class="footer__social footer__social--google">
+                <img src="./img/twitter-yellow.png" alt="Twitter" class="footer__social">
+                <img src="./img/facebook-yellow.png" alt="Facebook" class="footer__social">
+                <img src="./img/instagram-yellow.png" alt="Instagram" class="footer__social">
+              </div>
+            </div>
+            <p class="text text--white footer__copy-right">
+              © 2016 Created by Goldenfox
+            </p>
+          </aside>
+        </div>
+    </footer>
+    <!-- Footer end -->
   </body>
 </html>

@@ -34,10 +34,12 @@
     width: 250px;
     .icon-social{
       @include size(21px, 19px);
+      cursor: pointer;
     }
   }
   &__google{
     @include size(31px, 17px);
+    cursor: pointer;
   }
 
   // Devise tablet
@@ -47,8 +49,7 @@
       padding-bottom: 45px;
     }
     &__container{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      @include grid(grid, 1fr 1fr);
       grid-column-gap: 30px;
     }
     &__detail{

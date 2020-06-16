@@ -33,24 +33,3 @@
     letter-spacing: -0.0363636em;
   }
 }
-
-.nav{
-  &__container{
-    @include flex-box(flex, null, space-between);
-    width: 350px;
-  }
-  &__link{
-    text-transform: uppercase;
-    @include font(12px, 16px);
-    letter-spacing: 0.0832079em;
-  }
-  @include respond(desktop){
-    &__container{
-      width: 510px;
-    }
-    &__link{
-      @include font(18px, 21px);
-      letter-spacing: 0.0555556em;
-    }
-  }
-}

@@ -34,6 +34,10 @@
   align-items: $align;
   justify-content: $justify;
 }
+@mixin grid($grid: grid,$template:null){
+  display: grid;
+  grid-template-columns: $template;
+}
 
 @mixin after-card {
   content: "";

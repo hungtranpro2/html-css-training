@@ -10,7 +10,7 @@
     text-transform: uppercase;
   }
   &__item{
-    display: flex;
+    @include flex-box(flex,null,null);
     width: max-content;
     margin: 0 auto 40px;
   }
@@ -52,11 +52,9 @@
       overflow: hidden;
     }
     .container{
-      width: max-content;
       margin: auto;
       width: 720px;
-      display: grid;
-      grid-template-columns: auto 1fr;
+      @include grid(grid, auto 1fr);
     }
     &__container-item{
       padding: 25px 0;
@@ -88,8 +86,7 @@
       .container{
         width: max-content;
         margin: auto;
-        display: grid;
-        grid-template-columns: auto 1fr;
+        @include grid(grid, auto 1fr);
       }
       &__container-item{
         padding: 25px 0;

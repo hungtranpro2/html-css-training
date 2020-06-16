@@ -30,24 +30,27 @@
     }
   }
 
-  &-logo{
+  &__logo{
     @include size(100%, 100%);
+    cursor: pointer;
   }
 
   &__wrap-icon{
     @include size(20px, 20px);
   }
 
-  &-icon{
+  &__icon{
     @include size(100%, 100%);
+    cursor: pointer;
   }
 
   &__nav{
     display: none ;
   }
 
-  &-hamburger{
+  &__hamburger{
     float: right;
+    cursor: pointer;
   }
 
   &__title{
@@ -64,6 +67,7 @@
       transform: translate(-50%, -50%);
       .play-button{
         @include size(100%, 100%);
+        cursor: pointer;
       }
   }
   .down-arrow{
