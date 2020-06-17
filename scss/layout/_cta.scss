@@ -1,38 +1,38 @@
-.cta{
+.cta {
   // Devise phone
   padding: 100px 0;
   background: url("../img/cta-background-phone.png");
   background-size: cover;
-  &__container{
+  &__container {
     text-align: center;
   }
-  &__title{
+  &__title {
     padding-bottom: 10px;
   }
-  &__content{
+  &__content {
     max-width: 240px;
     padding-bottom: 20px;
   }
 
   // Devise tablet
-  @include respond(tablet){
+  @include respond(tablet) {
     background: url("../img/cta-background-tablet.png");
     background-size: cover;
-    &__title{
+    &__title {
       padding-bottom: 26px;
     }
-    &__content{
+    &__content {
       max-width: 471px;
       padding-bottom: 30px;
     }
   }
 
   // Devise desktop
-  @include respond(desktop){
+  @include respond(desktop) {
     padding: 190px 0;
     background: url("../img/cta-background-desktop.png");
     background-size: cover;
-    &__content{
+    &__content {
       max-width: 555px;
       padding-bottom: 40px;
     }

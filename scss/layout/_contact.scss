@@ -1,127 +1,127 @@
-.contact{
+.contact {
   padding: 16px 0 25px;
-  &__wrap-image{
+  &__wrap-image {
     display: none;
   }
-  &__title{
+  &__title {
     padding-bottom: 12px;
   }
-  &__detail{
+  &__detail {
     margin: 20px 0 0;
   }
-  &__wrap-content{
+  &__wrap-content {
     @include flex-box(flex,flex-start,null);
     padding-bottom: 10px;
-    .icon-location{
+    .icon-location {
       @include size(10px, 11px);
       margin-right: 13px;
     }
-    .icon-email{
+    .icon-email {
       @include size(16px, 9px);
       margin-right: 7px;
     }
-    .icon-phone{
+    .icon-phone {
       @include size(12px, 11px);
       margin-right: 11px;
     }
   }
-  &__content{
+  &__content {
     max-width: 226px;
   }
-  &__wrap-social{
+  &__wrap-social {
     margin-top: 5px;
     @include flex-box(flex,center,space-between);
     width: 250px;
-    .icon-social{
+    .icon-social {
       @include size(21px, 19px);
       cursor: pointer;
     }
   }
-  &__google{
+  &__google {
     @include size(31px, 17px);
     cursor: pointer;
   }
 
   // Devise tablet
-  @include respond(tablet){
+  @include respond(tablet) {
     padding: 34px 0 40px;
-    &__title{
+    &__title {
       padding-bottom: 45px;
     }
-    &__container{
+    &__container {
       @include grid(grid, 1fr 1fr);
       grid-column-gap: 30px;
     }
-    &__detail{
+    &__detail {
       margin: 0;
     }
-    &__wrap-content{
+    &__wrap-content {
       padding-bottom: 15px;
-      .icon-location{
+      .icon-location {
         @include size(10px, 16px);
         margin-right: 10px;
       }
-      .icon-email{
+      .icon-email {
         @include size(17px, 10px);
         margin-right: 3px;
       }
-      .icon-phone{
+      .icon-phone {
         @include size(12px, 17px);
         margin-right: 8px;
       }
     }
-    &__wrap-social{
-      .icon-social{
+    &__wrap-social {
+      .icon-social {
         @include size(22px, 22px);
       }
     }
-    &__google{
+    &__google {
       @include size(32px, 21px);
     }
   }
 
   // Devise Desktop
-  @include respond(desktop){
+  @include respond(desktop) {
     padding: 67px 0 70px;
-    &__title{
+    &__title {
       padding: 70px;
     }
-    &__container{
+    &__container {
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 100px;
       position: relative;
     }
-    &__wrap-image{
+    &__wrap-image {
       display: block;
       position: absolute;
       top: -32%;
     }
-    &__form{
+    &__form {
       grid-column: 2;
     }
-    &__wrap-content{
+    &__wrap-content {
       padding-bottom: 23px;
-      .icon-location{
+      .icon-location {
         margin-right: 15px;
       }
-      .icon-email{
+      .icon-email {
         margin-right: 8px;
       }
-      .icon-phone{
+      .icon-phone {
         margin-right: 13px;
       }
     }
-    &__icon{
+    &__icon {
       margin-top: 5px;
     }
-    &__wrap-social{
+    &__wrap-social {
       margin-top: 20px;
       width: 280px;
-      .icon-social{
+      .icon-social {
         @include size(25px, 25px);
       }
     }
-    &__google{
+    &__google {
       @include size(36px, 23px);
     }
   }

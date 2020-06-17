@@ -1,4 +1,4 @@
-.btn{
+.btn {
   // Devise phone
   @include size(140px, 32px);
   text-transform: uppercase;
@@ -9,18 +9,18 @@
   color: $color-primary;
   border: none;
   cursor: pointer;
-  &--black{
+  &--black {
     background-color: $color-primary;
     color: $color-white;
   }
 
   // Devise tablet
-  @include respond(tablet){
+  @include respond(tablet) {
     @include size(140px, 40px);
   }
 
   // Devise desktop
-  @include respond(desktop){
+  @include respond(desktop) {
     @include size(210px, 48px);
     @include font($font-default-desktop,19px);
     letter-spacing: 0.0625em;

@@ -1,147 +1,147 @@
-.header{
+.header {
   // Devise phone
   background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),
   url("../img/Bitmap-small.png");
   background-size: cover;
-  &__container{
-    &-navigation{
+  &__container {
+    &-navigation {
     @include flex-box(flex, center, space-between);
     margin: auto;
     padding: 15px 5% 0;
     width: 100%;
     }
-    &-logo{
+    &-logo {
       @include size(53px, 38px);
     }
-    &-icon{
+    &-icon {
       width: 95px;
       @include flex-box(flex, null, space-between);
     }
-    &-hamburger{
+    &-hamburger {
       width: 53px;
     }
-    &-video{
+    &-video {
       @include size(240px, 140px);
       margin: auto;
       position: relative;
-      .video-frame{
+      .video-frame {
         @include size(100%, auto);
       }
     }
   }
 
-  &__logo{
+  &__logo {
     @include size(100%, 100%);
     cursor: pointer;
   }
 
-  &__wrap-icon{
+  &__wrap-icon {
     @include size(20px, 20px);
   }
 
-  &__icon{
+  &__icon {
     @include size(100%, 100%);
     cursor: pointer;
   }
 
-  &__nav{
+  &__nav {
     display: none ;
   }
 
-  &__hamburger{
+  &__hamburger {
     float: right;
     cursor: pointer;
   }
 
-  &__title{
+  &__title {
     color: $color-white;
     line-height: 24px;
     padding: 80px 14% 35px;
   }
 
-  &__wrap-play{
+  &__wrap-play {
     @include size(56px,56px);
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      .play-button{
+      .play-button {
         @include size(100%, 100%);
         cursor: pointer;
       }
   }
-  .down-arrow{
+  .down-arrow {
     margin: auto;
     display: block;
     padding: 110px 0 40px;
   }
 
   // Devise tablet
-  @include respond(tablet){
+  @include respond(tablet) {
     background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),
   url("../img/Bitmap-tablet.png");
     background-size: cover;
-    &__container{
-      &-navigation{
+    &__container {
+      &-navigation {
         padding: 20px 5% 0;
       }
-      &-hamburger{
+      &-hamburger {
         display: none;
       }
-      &-video{
+      &-video {
         @include size(345px, 200px);
       }
-      &-logo{
+      &-logo {
         @include size(80px, 58px);
       }
     }
-    &__nav{
+    &__nav {
       display: block;
     }
-    &__title{
+    &__title {
       padding: 55px 16% 35px;
     }
-    .down-arrow{
+    .down-arrow {
       display: none;
     }
-    &__space{
+    &__space {
       padding-bottom: 120px;
     }
   }
 
   // Devise desktop
-  @include respond(desktop){
+  @include respond(desktop) {
     background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),
   url("../img/Background-desktop.png");
     background-size: cover;
-    &__container{
-      &-navigation{
+    &__container {
+      &-navigation {
         padding: 35px 10% 0;
       }
-      &-icon{
+      &-icon {
         width: 165px;
       }
-      &-hamburger{
+      &-hamburger {
         display: none;
       }
-      &-video{
+      &-video {
         @include size(555px, 324px);
       }
-      &-logo{
+      &-logo {
         @include size(130px, 90px);
       }
     }
-    &__nav{
+    &__nav {
       display: block;
     }
-    &__title{
+    &__title {
       padding: 40px 30% 50px;
       line-height: 48px;
     }
-    &__wrap-play{
+    &__wrap-play {
       @include size(72px, 72px);
     }
-    .down-arrow{
+    .down-arrow {
       display: block;
       padding: 90px 0 40px;
     }

@@ -1,233 +1,237 @@
-.project{
+.project {
   padding: 30px 0 20px;
-  &__title{
+  &__title {
     padding-bottom: 12px;
   }
-  &__container-item{
+  &__container-item {
     @include grid(grid, 1fr 1fr);
   }
-  &__item{
+  &__item {
     @include size(145px, 100px);
     position: relative;
-    &--large{
+    &--large {
       @include size(290px, 100px);
       grid-column: 1/3;
     }
-    &--white{
+    &--white {
       background-color: #F6F6F6;
       @include size(290px, 110px);
       grid-column: 1/3;
     }
   }
-  &__image{
+  &__image {
     position: absolute;
     @include size(100%,100%);
   }
-  &__wrap-content{
+  &__wrap-content {
     position: absolute;
     @include size(100%,100%);
     background: rgba(0,0,0,0.5);
-    &--large{
+    &--large {
       @include grid(grid, 1fr 1fr);
     }
     opacity: 0;
-    &:hover{
+    &:hover {
       opacity: 1;
       transition: 0.5s all ease;
     }
   }
 
-  &__content{
+  &__content {
     position: absolute;
     height: 90px;
     padding: 0 10px;
     overflow: hidden;
-    &--white{
+    &--white {
       height: 100px;
     }
   }
-  &__wrap-heading{
+  &__wrap-heading {
     max-width: 280px;
     @include flex-box(flex, center, space-between);
   }
   &__wrap-view,
   &__wrap-like,
-  &__wrap-comment {
+  &__wrap-comment  {
     @include flex-box(flex, center, space-between);
     width: 45px;
   }
-  &__wrap-view{
+  &__wrap-view {
     width: 55px;
   }
-  .view{
+  .view {
     @include size(16px, 6px);
   }
 
-  &__heading{
+  &__heading {
     @include font(16px, 32px);
     letter-spacing: -0.03125em;
   }
-  &__sub-heading{
+  &__sub-heading {
     letter-spacing: 0.0666667em;
     padding-bottom: 12px;
   }
-  &__wild{
+  &__wild {
     @include font(32px, 28px);
     letter-spacing: -0.015625em;
     padding-top: 10px;
   }
-  .rectangle{
+  .rectangle {
     @include size(14px, 1.35px);
     background-color: $color-white;
-    &--black{
+    &--black {
       background-color: $color-primary;
     }
   }
-  &__info{
+  &__info {
     display: none;
   }
-  &__pagination{
+  &__pagination {
     @include flex-box(flex,center,space-between);
     margin:40px auto 20px;
     width: 230px;
   }
-  &__number{
+  &__wrap-prev, &__wrap-next {
+    cursor: pointer;
+  }
+  &__number {
     @include font(12px, 6px);
-    &--active{
+    cursor: pointer;
+    &--active {
       color: $color-secondary;
       padding: 8px;
       border-radius: 50%;
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     }
   }
-  &__wrap-number--five{
+  &__wrap-number--five {
     display: none;
   }
 
   // Devise tablet
-  @include respond(tablet){
+  @include respond(tablet) {
     padding: 26px 0 30px;
-    &__title{
+    &__title {
       padding-bottom: 30px;
     }
-    &__container-item{
+    &__container-item {
       grid-template-columns: 1fr 1fr 1fr;
     }
-    &__item{
+    &__item {
       @include size(240px, 240px);
       position: relative;
-      &--large{
+      &--large {
         @include size(480px, 240px);
         @include grid(grid, 1fr 1fr);
       }
-      &--white{
+      &--white {
         grid-area: 3/2/4/3;
       }
     }
-    &__mountain{
+    &__mountain {
       grid-area: 1/2/2/4;
     }
-    &__snow{
+    &__snow {
       grid-area: 2/1/3/3;
     }
-    .view{
+    .view {
       @include size(18px, 11px);
     }
-    .like{
+    .like {
       @include size(14px, 12px);
     }
-    .comment{
+    .comment {
       @include size(14px, 9px);
     }
-    .view-heading{
+    .view-heading {
       display: none;
     }
-    &__info{
+    &__info {
       @include flex-box(flex,center,space-between);
       width: 190px;
     }
-    &__content{
+    &__content {
       height: auto;
       padding-top: 40px;
       grid-column: 2;
     }
-    &__heading{
+    &__heading {
       @include font(24px, 32px);
       padding-bottom: 5px;
       letter-spacing: -0.025em;
     }
-    &__sub-heading{
+    &__sub-heading {
       padding-bottom: 20px;
     }
-    .rectangle{
+    .rectangle {
       @include size(16px, 4px);
       margin-bottom: 24px;
     }
-    &__wild{
+    &__wild {
       letter-spacing: -0.0277778em;
       width: 102px;
     }
-    &__description{
+    &__description {
       margin-bottom: 16px;
       max-width: 200px;
     }
-    &__wrap-number--five{
+    &__wrap-number--five {
       display: block;
     }
   }
 
   // Devise Desktop
-  @include respond(desktop){
+  @include respond(desktop) {
     padding: 66px 0 71px;
-    &__title{
+    &__title {
       padding-bottom: 54px;
     }
-    &__item{
+    &__item {
       @include size(380px, 380px);
-      &--large{
+      &--large {
         @include size(760px, 380px);
       }
     }
-    &__content{
+    &__content {
       padding: 58px 0 0 30px;
     }
-    &__heading{
+    &__heading {
       @include font(32px, 42px);
     }
-    &__sub-heading{
+    &__sub-heading {
       @include font(18px, 30px);
       padding-bottom: 31px;
     }
-    .rectangle{
+    .rectangle {
       @include size(32px, 6px);
       margin-bottom: 38px;
     }
-    &__description{
+    &__description {
       margin-bottom: 24px;
       max-width: 300px;
     }
-    &__info{
+    &__info {
       width: 250px;
     }
     &__wrap-like,
-    &__wrap-comment {
+    &__wrap-comment  {
       width: 55px;
     }
-    &__wrap-view{
+    &__wrap-view {
       width: 65px;
     }
-    &__wild{
+    &__wild {
       @include font(64px, 54px);
       letter-spacing: -0.03125em;
       width: 180px;
     }
-    &__pagination{
+    &__pagination {
       margin:65px auto 0;
       width: 350px;
     }
-    &__number{
+    &__number {
       @include font(18px, 10px);
-      &--active{
+      &--active {
         padding: 15px;
       }
     }

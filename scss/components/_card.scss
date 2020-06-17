@@ -1,101 +1,101 @@
-.card{
+.card {
   width: 240px;
   text-align: center;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   position: relative;
   opacity: 0.9;
-  &--silver{
+  &--silver {
     background-color: $color-primary;
-    &::after{
+    &::after {
       opacity: 0.3;
       @include after-card();
       background: linear-gradient(226.38deg, rgba(255, 255, 255, 0.7) 5.13%, rgba(255, 255, 255, 7e-05) 90.88%);
       background-blend-mode: soft-light;
     }
   }
-  &--gold{
+  &--gold {
     background-color: $color-secondary;
-    &::after{
+    &::after {
       opacity: 0.1;
       @include after-card();
       background: linear-gradient(227.29deg, rgba(255, 255, 255, 0.496575) 0%, rgba(255, 255, 255, 0.0001) 100%);
       background-blend-mode: soft-light;
     }
   }
-  &--platinum{
+  &--platinum {
     background-color: $color-primary;
     opacity: 0.95;
-    &::after{
+    &::after {
       @include after-card();
       background: linear-gradient(226.78deg, rgba(0, 0, 0, 0.0001) 4.85%, rgba(0, 0, 0, 0.401127) 96.5%);
       background-blend-mode: multiply;
     }
   }
 
-  &__name{
+  &__name {
     text-transform: uppercase;
     font-family: "Lucida Grande";
     color: $color-secondary;
     line-height: 27px;
     letter-spacing: 0.0555556em;
     padding-top: 15px;
-    &--gold{
+    &--gold {
       color: $color-primary;
     }
   }
-  &__price{
+  &__price {
     @include flex-box(flex, center, center);
   }
-  &__number{
+  &__number {
     @include font(36px, 48px);
   }
-  &__date{
+  &__date {
     line-height: 27px;
     letter-spacing: 0.0555556em;
     text-transform: uppercase;
     padding-bottom: 7px;
   }
-  &__content{
+  &__content {
     line-height: 24px;
   }
-  &__button{
+  &__button {
     margin: 20px 0 30px;
     @include size(150px, 34px);
   }
 
   // Devise tablet
-  @include respond(tablet){
+  @include respond(tablet) {
     width: 170px;
-    &__name{
+    &__name {
       padding: 22px 0 12px;
     }
-    &__button{
+    &__button {
       @include size(120px, 40px);
     }
   }
 
   // Devise desktop
-  @include respond(desktop){
+  @include respond(desktop) {
     width: 270px;
-    &__name{
+    &__name {
       padding: 40px 0 30px;
       @include font($font-large-desktop, 27px);
     }
-    &__price{
+    &__price {
       padding-bottom: 15px;
     }
-    &__dollar{
+    &__dollar {
       @include font(24px, 28px);
     }
-    &__number{
+    &__number {
       @include font(64px, 48px);
     }
-    &__date{
+    &__date {
       @include font($font-large-desktop, 27px);
       padding-bottom: 23px;
     }
-    &__button{
+    &__button {
       @include size(198px, 48px);
       margin-top: 30px;
     }

@@ -1,8 +1,8 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-body, h1, h2, p, a{
+body, h1, h2, p, a {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   color: $color-primary;
@@ -10,13 +10,13 @@ body, h1, h2, p, a{
   font-weight: normal;
 }
 
-ul{
+ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-a{
+a {
   text-decoration: none;
   color: $color-white;
 }
