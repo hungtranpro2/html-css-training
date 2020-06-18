@@ -1,4 +1,4 @@
-# HTML/CSS Practice 2
+# HTML/CSS Practice 3
 ## INTRODUCTION
 - Building a webpage with designed layout.
 ## TIMELINE
