@@ -1,0 +1,28 @@
+.social {
+  // Device phone
+  @include flex-box(flex,center,space-between);
+  &__icon {
+    @include size(18px, 18px);
+    cursor: pointer;
+
+    &--large {
+      @include size(25px, 18px);
+    }
+  }
+
+  // Device tablet
+  @include respond(tablet) {
+
+  }
+
+  // Device desktop
+  @include respond(desktop) {
+    &__icon {
+      @include size(25px, 30px);
+
+      &--large {
+        @include size(35px, 30px);
+      }
+    }
+  }
+}

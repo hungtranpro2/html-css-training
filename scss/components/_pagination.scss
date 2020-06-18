@@ -1,0 +1,48 @@
+.pagination {
+  // Device phone
+  @include flex-box(flex,center,space-between);
+  margin:40px auto 20px;
+  width: 230px;
+
+  &__wrap-prev,
+  &__wrap-next {
+    cursor: pointer;
+  }
+
+  &__number {
+    @include font(12px, 6px);
+    cursor: pointer;
+
+    &--active {
+      color: $color-secondary;
+      padding: 8px;
+      border-radius: 50%;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__wrap-number--visible {
+    display: none;
+  }
+
+  // Device tablet
+  @include respond(tablet) {
+    &__wrap-number--visible {
+      display: block;
+    }
+  }
+
+  // Device desktop
+  @include respond(desktop) {
+    margin:65px auto 0;
+    width: 350px;
+
+    &__number {
+      @include font(18px, 10px);
+
+      &--active {
+        padding: 15px;
+      }
+    }
+  }
+}

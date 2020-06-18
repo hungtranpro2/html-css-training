@@ -1,29 +1,37 @@
 .footer {
+  // Device phone
   padding: 22px 0 40px;
   background-color: $color-primary;
+
   &__container {
     text-align: center;
   }
+
   &__logo {
     @include size(118px, 82px);
     margin-bottom: 19px;
   }
+
   &__description {
     max-width: 290px;
     margin-bottom: 13px;
   }
+
   &__copy-right--hide {
     display: none;
   }
+
   &__heading {
     text-transform: uppercase;
     letter-spacing: 0.0666667em;
   }
+
   &__wrap-input {
     @include flex-box(flex,null,null);
     @include size(158px, 20px);
     margin: 17px auto;
   }
+
   &__input {
     @include size(138px, 20px);
     background: inherit;
@@ -34,129 +42,138 @@
     padding: 2px 5px;
     color: $color-white;
   }
+
   &__button {
     @include size(25px, 20px);
   }
+
   &__nav {
     @include grid(grid, 1fr 1fr 1fr);
     grid-row-gap: 7px;
     margin-bottom: 26px;
   }
+
   &__link {
     letter-spacing: 0;
     text-transform: unset;
   }
-  &__wrap-social {
-    @include flex-box(flex,center,space-between);
+
+  &__social {
     width: 220px;
     margin: 10px auto 12px;
   }
-  &__social {
-    @include size(18px, 18px);
-    cursor: pointer;
-    &--google {
-      @include size(25px, 18px);
-    }
-  }
 
-  // Devise tablet
+  // Device tablet
   @include respond(tablet) {
     padding: 25px 0 90px;
+
     &__container {
       @include grid(grid, 1fr 1fr);
       text-align: left;
       grid-column-gap: 20px;
     }
+
     &__logo {
       grid-area: 1/1/2/3;
     }
+
     &__description {
       max-width: 220px;
       margin-bottom: 16px;
     }
+
     &__copy-right {
       display: none;
+
       &--hide {
         display: block;
         margin-bottom: 16px;
       }
     }
+
     &__wrap-input {
       @include size(158px, 23px);
       margin: 13px 0 0;
     }
+
     &__input {
       @include size(138px, 23px);
     }
+
     &__button {
       @include size(25px, 23px);
     }
+
     &__nav {
       grid-gap: 8px 45px;
       margin-bottom: 26px;
     }
+
     &__wrap-follow {
       margin-left: 130px;
     }
-    &__wrap-social {
-      margin: 13px 0 0;
+
+    &__social {
+      margin: 10px auto 12px;
     }
   }
 
-  // Devise Desktop
+  // Device Desktop
   @include respond(desktop) {
     padding: 18px 0 60px;
+
     &__logo {
       @include size(142px, 90px);
       margin: 0;
     }
+
     &__description {
       @include font($font-large-desktop, 24px);
       max-width: 270px;
       margin-bottom: 30px;
     }
+
     &__copy-right {
       &--hide {
         margin-bottom: 30px;
       }
     }
+
     &__heading {
       @include font($font-large-desktop, 21px);
       letter-spacing: 0.0555556em;
     }
+
     &__wrap-input {
       @include size(262px, 58px);
       margin: 23px 0 0;
     }
+
     &__input {
       @include size(211px, 58px);
       padding: 0 18px;
     }
+
     &__button {
       @include size(51px, 58px);
     }
+
     &__link {
       @include font($font-large-desktop,24px)
     }
+
     &__nav {
       grid-gap: 15px 85px;
       margin-bottom: 50px;
     }
+
     &__wrap-follow {
       margin-left: 210px;
     }
-    &__wrap-social {
-      margin: 13px 0 0;
-    }
-    &__wrap-social {
+
+    &__social {
       width: 330px;
       margin: 30px 0 0;
-    }
-    &__social {
-      @include size(25px, 30px);
-      &--google {
-        @include size(35px, 30px);
-      }
     }
   }
 }

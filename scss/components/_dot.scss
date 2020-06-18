@@ -1,0 +1,31 @@
+.dot {
+  // Device phone
+  @include flex-box(flex,center,space-between);
+  width: 70px;
+  margin: 0 auto 20px;
+
+  &__item {
+    @include size(7px, 7px);
+    border: 1px solid $color-white;
+    border-radius: 4px;
+
+    &--active {
+      background-color: $color-white;
+    }
+  }
+
+  // Device tablet
+  @include respond(tablet) {
+      height: 75px;
+      flex-direction: column;
+      margin: 0;
+  }
+
+  // Device desktop
+  @include respond(desktop) {
+    height: 96px;
+    &__item {
+      @include size(10px, 10px);
+    }
+  }
+}

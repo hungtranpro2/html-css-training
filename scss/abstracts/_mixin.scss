@@ -7,13 +7,13 @@
   }
 
   @if $break-point == tablet {
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
       @content;
     }
   }
 
   @if $break-point == desktop {
-    @media screen and (min-width: 1440px){
+    @media screen and (min-width: 1440px) {
       @content;
     }
   }
@@ -34,6 +34,7 @@
   align-items: $align;
   justify-content: $justify;
 }
+
 @mixin grid($grid: grid,$template:null) {
   display: grid;
   grid-template-columns: $template;

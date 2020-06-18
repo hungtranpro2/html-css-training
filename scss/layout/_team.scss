@@ -2,32 +2,22 @@
   padding: 28px 0 23px;
   background: url('../img/background-team-phone.png');
   background-size: cover;
+
   &__heading {
     @include font(24px, 32px);
     letter-spacing: -0.025em;
     padding-bottom: 4px;
   }
+
   &__sub-heading {
     text-transform: uppercase;
     padding-bottom: 20px;
     letter-spacing: 0.0666667em;
   }
+
   &__description {
     max-width: 250px;
     padding-bottom: 15px;
-  }
-  &__dot-nav {
-    @include flex-box(flex,center,space-between);
-    width: 70px;
-    margin: 0 auto 20px;
-  }
-  &__dot {
-    @include size(7px, 7px);
-    border: 1px solid $color-white;
-    border-radius: 4px;
-    &--active {
-      background-color: $color-white;
-    }
   }
 
   // devise tablet
@@ -36,30 +26,29 @@
     background: url('../img/background-team-tablet.png');
     background-size: cover;
     @include grid(grid, 1fr 1fr);
+
     &__container {
       grid-column: 2;
       max-width: none;
       margin-left: 100px;
     }
+
     &__wrap-content {
       @include flex-box(flex,flex-start,space-between);
       width: 360px;
     }
+
     &__heading {
       padding-bottom: 5px;
     }
+
     &__sub-heading {
       padding-bottom: 16px;
     }
+
     &__description {
       max-width: 282px;
       padding-bottom: 0;
-    }
-    &__dot-nav {
-      @include flex-box(flex,null,null);
-      height: 75px;
-      flex-direction: column;
-      margin: 0;
     }
   }
 
@@ -68,24 +57,22 @@
     padding: 230px 0 70px;
     background: url('../img/background-team-desktop.png');
     background-size: cover;
+
     &__wrap-content {
       width: 524px;
     }
+
     &__heading {
       @include font(32px, 42px);
     }
+
     &__sub-heading {
       padding-bottom: 22px;
       letter-spacing: 0.0555556em;
     }
+
     &__description {
       max-width: 360px;
-    }
-    &__dot-nav {
-      height: 96px;
-    }
-    &__dot {
-      @include size(10px, 10px);
     }
   }
 }

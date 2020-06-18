@@ -1,20 +1,28 @@
 .text {
+  // Device phone
   @include font($font-default-phone, 16px);
+
   &--large {
     @include font($font-large-phone, 16px);
   }
+
   &--white {
     color: $color-white;
   }
+
+  // Device tablet
   @include respond(tablet) {
     @include font($font-default-tablet, 16px);
+
     &--large {
       @include font($font-large-tablet, 16px);
     }
   }
 
+  // Device desktop
   @include respond(desktop) {
     @include font(16px, 24px);
+
     &--large {
       @include font(16px, 32px);
     }
@@ -22,12 +30,17 @@
 }
 
 .title {
+  // Device phone
   @include font(20px, 40px);
   letter-spacing: -0.025em;
   text-align: center;
+
+  // Device tablet
   @include respond(tablet) {
     @include font(32px, 40px);
   }
+
+  // Device desktop
   @include respond(desktop) {
     @include font(44px, 48px);
     letter-spacing: -0.0363636em;
